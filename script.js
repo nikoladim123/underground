@@ -1,4 +1,4 @@
-let show = document.getElementsByClassName('show');
+let show = document.getElementsByClassName('show')[0];
 
 var options = {
   enableHighAccuracy: true,
