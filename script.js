@@ -1,7 +1,9 @@
 let show = document.getElementsByClassName('show')[0];
 let refresh = document.getElementsByClassName('refresh')[0];
 
-refresh.addEventListener('click',navigator.geolocation.getCurrentPosition(success, error, options))
+refresh.addEventListener('click',()=>{
+  navigator.geolocation.getCurrentPosition(success, error, options)
+})
 
 var options = {
   enableHighAccuracy: true,
