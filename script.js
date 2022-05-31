@@ -1,3 +1,5 @@
+let show = document.getElementsByClassName('show');
+
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
@@ -11,6 +13,7 @@ function success(pos) {
   console.log(`Latitude : ${crd.latitude}`);
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
+  show.innerHTML = `Latitude : ${crd.latitude} Longitude: ${crd.longitude}`
 }
 
 function error(err) {
