@@ -6,7 +6,7 @@ refresh.addEventListener('click',()=>{
 })
 
 var options = {
-  enableHighAccuracy: true,
+  enableHighAccuracy: false,
   timeout: 50000,
   maximumAge: 0
 };
